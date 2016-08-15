@@ -1,10 +1,11 @@
+
 import express = require('express');
 import router from './router';
 
 const app: express.Application = express();
 
 // requesthandler
-const requestHandler: express.RequestHandler = (req: express.Request, res: express.Response, next: express.NextFunction) => {
+const requestHandler: express.RequestHandler = (req, res, next) => {
     console.log(req.ip);
     res.json({hello: 'world'});
     req.app.get('some_setting');
