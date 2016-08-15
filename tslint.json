@@ -79,7 +79,7 @@
         "no-switch-case-fall-through": true,
         "no-unreachable": true,
         "no-unused-expression": true,
-        "no-use-before-declare": true,
+        // "no-use-before-declare": true,
         "no-var-keyword": true,
         "switch-default": true,
         "triple-equals": [
