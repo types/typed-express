@@ -2,7 +2,7 @@
   "name": "express",
   "version": "4.14.0",
   "main": "index.d.ts",
-  "homepage": "https://github.com/IOAyman/typed-express",
+  "homepage": "https://github.com/felixfbecker/typed-express",
   "globalDependencies": {
     "node": "registry:env/node#6.0.0+20160723033700"
   },
