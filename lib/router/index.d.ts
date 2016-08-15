@@ -279,6 +279,7 @@ declare namespace createRouter {
         use(...handlers: HandlerArgument[]): this;
         use(mountPoint: string, ...handlers: HandlerArgument[]): this;
         use(mountPoint: RegExp, ...handlers: HandlerArgument[]): this;
+        use(mountPoint: (string | RegExp)[], ...handlers: HandlerArgument[]): this;
 
         route(prefix: PathArgument): Route;
     }

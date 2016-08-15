@@ -43,6 +43,7 @@ console.log(app.get('some_setting'));
 // mount router
 app.use('/mountpath', router);
 app.use(/\/mountpath/, router);
+app.use(['/mountpath', /\/mountpath/], router);
 app.use(router);
 
 app.listen(8080);
