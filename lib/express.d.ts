@@ -1,7 +1,7 @@
 
 import {Application as _Application} from './application';
 import {Request as _Request} from './request';
-import {Response as _Response} from './response';
+import {Response as _Response, CookieOptions as _CookieOptions} from './response';
 import createRouter = require('./router/index');
 import RouteClass = require('./router/route');
 import serveStatic = require('serve-static');
@@ -11,6 +11,7 @@ declare namespace createApplication {
     // workaround to reexport the interfaces
     export type Request = _Request
     export type Response = _Response
+    export type CookieOptions = _CookieOptions
     export type Application = _Application
     export type Router = createRouter.Router
     export type RequestHandler = createRouter.RequestHandler
