@@ -283,5 +283,5 @@ declare namespace createRouter {
     }
 }
 
-declare function createRouter(options? : {caseSensitive?: boolean; mergeParams?: boolean; strict?: boolean}): createRouter.Router;
+declare function createRouter(options?: {caseSensitive?: boolean; mergeParams?: boolean; strict?: boolean}): createRouter.Router;
 export = createRouter;
