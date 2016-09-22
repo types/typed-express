@@ -14,6 +14,7 @@ declare namespace createApplication {
     export type CookieOptions = _CookieOptions
     export type Application = _Application
     export type Router = createRouter.Router
+    export type RouterOptions = createRouter.RouterOptions
     export type RequestHandler = createRouter.RequestHandler
     export type ErrorHandler = createRouter.ErrorHandler
     export type ParamHandler = createRouter.ParamHandler
