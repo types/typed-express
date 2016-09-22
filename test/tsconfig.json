@@ -12,6 +12,7 @@
     "middleware.ts",
     "params.ts",
     "router.ts",
+    "router-options.ts",
     "static.ts"
   ]
 }
