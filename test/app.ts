@@ -1,8 +1,11 @@
 
 import express = require('express');
+import {createServer} from 'http';
 import router from './router';
 
-const app: express.Application = express();
+const app = express();
+
+createServer(app).listen(3000);
 
 // requesthandler
 const requestHandler: express.RequestHandler = (req, res, next) => {

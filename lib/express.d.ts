@@ -1,4 +1,6 @@
 
+import {IncomingMessage, ServerResponse} from 'http';
+import {EventEmitter} from 'events';
 import {Application as _Application} from './application';
 import {Request as _Request} from './request';
 import {Response as _Response, CookieOptions as _CookieOptions} from './response';
@@ -21,12 +23,16 @@ declare namespace createApplication {
     export type Handler = createRouter.Handler
     export type NextFunction = createRouter.NextFunction
 
+    export interface Server extends Application, EventEmitter {
+        (req: IncomingMessage, res: ServerResponse, next?: (err?: Error) => void): void;
+    }
+
     // need to use an interface for this because `static` is a reserved word
     // and cannot be used as a variable identifier
     export interface Express {
 
         /** Create an express application. */
-        (): Application;
+        (): Server;
 
         /** The Application prototype */
         application: Application;

@@ -1,16 +1,13 @@
 {
   "name": "express",
   "main": "index.d.ts",
+  "version": "4.14.0",
   "homepage": "https://github.com/types/npm-express",
   "dependencies": {
     "path-to-regexp": "github:pillarjs/path-to-regexp/index.d.ts#ec285ed3500aed455df59e3b8b07f473412918a4",
-    "serve-static": "registry:npm/serve-static#1.11.1+20160810053450"
+    "serve-static": "registry:npm/serve-static#1.11.1+20161113104247"
   },
-  "version": "4.14.0",
   "globalDependencies": {
-    "node": "registry:env/node#6.0.0+20160723033700"
-  },
-  "globalDevDependencies": {
-    "node": "registry:env/node#6.0.0+20160902022231"
+    "node": "registry:env/node#6.0.0+20170115054122"
   }
 }

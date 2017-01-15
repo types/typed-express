@@ -1,12 +1,10 @@
 
 import {Server} from 'http';
 import {ListenOptions} from 'net';
-import {EventEmitter} from 'events';
 import {Router, ParamHandler, HandlerArgument, PathArgument} from './router/index';
 
 declare namespace app {
-    export interface Application extends EventEmitter, Router {
-
+    export interface Application extends Router {
         /**
          * Contains one or more path patterns on which a sub-app was mounted.
          */
