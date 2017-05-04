@@ -11,7 +11,7 @@
   "author": "Felix Becker <felix.b@outlook.com>",
   "license": "ISC",
   "devDependencies": {
-    "tslint": "^4.3.1",
+    "tslint": "^5.2.0",
     "typescript": "^2.1.5",
     "typings": "^2.1.0"
   }
