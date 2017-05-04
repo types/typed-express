@@ -1,4 +1,6 @@
 # Typed express
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/types/npm-express.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/types/npm-express.svg?branch=master)](https://travis-ci.org/types/npm-express)
 
 Typescript Typings for [express](https://github.com/expressjs/express).
