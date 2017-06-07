@@ -1,8 +1,9 @@
 {
-  "name": "typed-express",
-  "version": "1.0.0",
+  "name": "@types/express",
+  "version": "4.14.0",
   "private": true,
-  "description": "Typings for express",
+  "description": "TypeScript Typings for express",
+  "typings": "index.d.ts",
   "scripts": {
     "build": "typings bundle -o test/bundle.d.ts",
     "test": "tsc -p test",
@@ -11,8 +12,15 @@
   "author": "Felix Becker <felix.b@outlook.com>",
   "license": "ISC",
   "devDependencies": {
-    "tslint": "^5.2.0",
-    "typescript": "^2.1.5",
-    "typings": "^2.1.0"
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4",
+    "typings": "^2.1.1"
+  },
+  "peerDependencies": {
+    "@types/node": "*"
+  },
+  "dependencies": {
+    "@types/serve-static": "github:types/npm-serve-static#c1f96843c8b96a37f6c534cb1dadb48f5329e4e0",
+    "path-to-regexp": "github:pillarjs/path-to-regexp#ec285ed3500aed455df59e3b8b07f473412918a4"
   }
 }

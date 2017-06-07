@@ -6,9 +6,12 @@
 Typescript Typings for [express](https://github.com/expressjs/express).
 
 ## Installation
-```sh
-typings install --save express
-```
+
+    typings install --save express
+
+or
+
+    npm install --save-dev types/npm-express#<commit hash>
 
 ## Usage
 
