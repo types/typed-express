@@ -186,6 +186,11 @@ declare namespace req {
         };
 
         /**
+         * This property is an object containing properties mapped to body "parameters".
+         */
+        body: { [key:string]:any };
+
+        /**
          * Return request header.
          *
          * The `Referrer` header field is special-cased,
