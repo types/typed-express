@@ -65,7 +65,7 @@ declare namespace res {
          *     res.send(404, 'Sorry, cant find that');
          *     res.send(404);
          */
-        send(body: string | Buffer | Object): this;
+        send(body: string | Buffer | Object | Array<any>): this;
 
         /**
          * Send JSON response.
